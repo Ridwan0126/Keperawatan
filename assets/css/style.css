@@ -134,3 +134,115 @@
   }
 
 /* bagian menu untuk tampilan mobile  */
+
+/* bagian home */
+
+.slider-area {
+  margin-top: -1px;
+  background-image: url(../img/bg/UNW.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.slider-area .hero__caption {
+  overflow: hidden;
+}
+.slider-area .hero__caption span {
+  font-size: 18px;
+  font-family: "Muli", sans-serif;
+  font-weight: 600;
+  margin-bottom: 35px;
+  text-transform: uppercase;
+  color: #396cf0;
+  display: inline-block;
+  position: relative;
+  padding-left: 100px;
+  letter-spacing: 0.05em;
+}
+@media (max-width: 575px) {
+  .slider-area .hero__caption span {
+    font-size: 13px;
+  }
+}
+@media (max-width: 575px) {
+  .slider-area .hero__caption span {
+    padding-left: 69px;
+  }
+}
+.slider-area .hero__caption span::before {
+  position: absolute;
+  content: "";
+  width: 70px;
+  height: 2px;
+  background: #396cf0;
+  top: 0;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (max-width: 575px) {
+  .slider-area .hero__caption span::before {
+    width: 50px;
+  }
+}
+.slider-area .hero__caption h1 {
+  font-size: 70px;
+  font-weight: 900;
+  margin-bottom: 14px;
+  color: #102039;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .slider-area .hero__caption h1 {
+    font-size: 70px;
+    line-height: 1.2;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .slider-area .hero__caption h1 {
+    font-size: 50px;
+    line-height: 1.2;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .slider-area .hero__caption h1 {
+    font-size: 35px;
+    line-height: 1.4;
+  }
+}
+@media (max-width: 575px) {
+  .slider-area .hero__caption h1 {
+    font-size: 29px;
+    line-height: 1.5;
+  }
+}
+.slider-area .hero__caption h1 strong {
+  color: #0f61ee;
+}
+.slider-area .hero__caption p {
+  font-size: 18px;
+  color: #212025;
+  font-family: "Muli", sans-serif;
+  margin-bottom: 50px;
+  padding-right: 35px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .slider-area .hero__caption p {
+    padding-right: 13px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .slider-area .hero__caption p {
+    padding-right: 0px;
+  }
+}
+@media (max-width: 575px) {
+  .slider-area .hero__caption p {
+    padding-right: 0px;
+    font-size: 15px;
+  }
+}
+
+/* bagian home  */
