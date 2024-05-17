@@ -1,42 +1,136 @@
-* {
-    box-sizing: border-box;
+/* Bagian Header */
+
+.header-area .main-header {
+    padding: 0px 130px;
   }
-  .menu {
-    float: left;
-    width: 20%;
-  }
-  .menuitem {
-    padding: 8px;
-    margin-top: 7px;
-    border-bottom: 1px solid #f1f1f1;
-  }
-  .main {
-    float: left;
-    width: 60%;
-    padding: 0 20px;
-    overflow: hidden;
-  }
-  .right {
-    background-color: lightblue;
-    float: left;
-    width: 20%;
-    padding: 10px 15px;
-    margin-top: 7px;
-  }
-  
-  @media only screen and (max-width:800px) {
-    /* For tablets: */
-    .main {
-      width: 80%;
-      padding: 0;
-    }
-    .right {
-      width: 100%;
+  @media only screen and (min-width: 1200px) and (max-width: 1600px) {
+    .header-area .main-header {
+      padding: 0px 30px;
     }
   }
-  @media only screen and (max-width:500px) {
-    /* For mobile phones: */
-    .menu, .main, .right {
-      width: 100%;
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .header-area .main-header {
+      padding: 0px 15px;
     }
   }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .header-area .main-header {
+      padding: 22px 50px;
+    }
+  }
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .header-area .main-header {
+      padding: 22px 20px;
+    }
+  }
+  @media (max-width: 575px) {
+    .header-area .main-header {
+      padding: 22px 14px;
+    }
+  }
+  @media only screen and (min-width: 1200px) and (max-width: 1600px) {
+    .header-area .main-header .main-menu {
+      margin-right: 30px;
+    }
+  }
+  .header-area .main-header .main-menu ul li {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+  }
+  .header-area .main-header .main-menu ul li a {
+    color: #102039;
+    font-weight: 600;
+    padding: 39px 27px;
+    display: block;
+    font-size: 16px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    text-transform: capitalize;
+    position: relative;
+    font-family: "Muli", sans-serif;
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .header-area .main-header .main-menu ul li a {
+      padding: 39px 15px;
+    }
+  }
+  .header-area .main-header .main-menu ul li:hover > a {
+    color: #0f61ef;
+  }
+  .header-area .main-header .main-menu ul ul.submenu {
+    position: absolute;
+    width: 170px;
+    background: rgba(255, 255, 255, 0.9);
+    left: 0;
+    top: 80%;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.05);
+    padding: 17px 0;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .header-area .main-header .main-menu ul ul.submenu > li {
+    margin-left: 7px;
+    display: block;
+  }
+  .header-area .main-header .main-menu ul ul.submenu > li > a {
+    padding: 6px 10px !important;
+    font-size: 16px;
+    text-transform: capitalize;
+    margin: 0;
+  }
+  .header-area .main-header .main-menu ul ul.submenu > li > a:hover {
+    color: #0f61ef;
+    background: none;
+  }
+  .header-area .main-menu ul ul.submenu > li > a:hover {
+    padding-left: 13px !important;
+  }
+  .header-area .main-menu ul > li:hover > ul.submenu {
+    visibility: visible;
+    opacity: 1;
+    top: 100%;
+  }
+
+/* bagian header  */
+
+/* bagian menu untuk tampilan mobile  */
+
+.mobile_menu {
+    position: absolute;
+    right: 0px;
+    width: 100%;
+    z-index: 99;
+  }
+  .mobile_menu .slicknav_menu {
+    background: transparent;
+    margin-top: 0px !important;
+  }
+  .mobile_menu .slicknav_menu .slicknav_btn {
+    top: -36px;
+  }
+  .mobile_menu .slicknav_menu .slicknav_btn .slicknav_icon-bar {
+    background-color: #0f61ef !important;
+  }
+  .mobile_menu .slicknav_menu .slicknav_nav {
+    margin-top: 15px !important;
+  }
+  .mobile_menu .slicknav_menu .slicknav_nav a:hover {
+    background: transparent;
+    color: #0f61ef;
+  }
+  .mobile_menu .slicknav_menu .slicknav_nav a {
+    font-size: 15px;
+    padding: 7px 10px;
+  }
+  .mobile_menu .slicknav_menu .slicknav_nav .slicknav_item a {
+    padding: 0 !important;
+  }
+
+/* bagian menu untuk tampilan mobile  */
