@@ -2286,7 +2286,7 @@ hr {
   font-weight: 600;
   margin-bottom: 35px;
   text-transform: uppercase;
-  color: #396cf0;
+  color: #ffffff;
   display: inline-block;
   position: relative;
   padding-left: 100px;
@@ -2307,7 +2307,7 @@ hr {
   content: "";
   width: 70px;
   height: 2px;
-  background: #396cf0;
+  background: #ffffff;
   top: 0;
   left: 0px;
   top: 50%;
